@@ -1,0 +1,29 @@
+{
+  "name": "OneItem",
+  "version": "0.0.1",
+  "description": "HAPI components",
+  "keywords": "hapi, data, behavior, components",
+  "headers": "include/hapi.h",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/InternetOfPins/OneItem.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Rui Azevedo",
+      "email": "ruihfazevedo@gmail.com",
+      "url": "https://github.com/neu-rah",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/InternetOfPins/OneItem",
+  "dependencies": {
+    "HAPI":"https://github.com/InternetOfPins/HAPI.git@^0.3.8",
+    "OneData":"https://github.com/InternetOfPins/OneData.git@^0.1.8"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
