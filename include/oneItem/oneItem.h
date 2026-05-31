@@ -5,6 +5,7 @@
 */
 
 #include <hapi/hapi.h>
+#include <oneData/oneData.h>
 
 namespace oneItem {
   // item API+Def ------------------------------------------------------------------
@@ -12,7 +13,7 @@ namespace oneItem {
   /// @brief minimal printable item 
   /// @tparam Cfg : optional...
   template<typename Cfg=hapi::Nil>
-  struct ItemAPI:Cfg{
+  struct ItemAPI:oneData::DataAPI<Cfg>{
     template<typename Out>
     static constexpr void print(Out& out) {}
   };

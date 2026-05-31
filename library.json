@@ -1,6 +1,6 @@
 {
   "name": "OneItem",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HAPI components",
   "keywords": "hapi, data, behavior, components",
   "headers": "include/hapi.h",
