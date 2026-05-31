@@ -35,5 +35,5 @@ namespace oneItem {
 
 //rules ItemDef query specialization --
 template<typename Q,typename... OO>
-constexpr const bool hapi::query<Q,oneItem::ItemDef<OO...>>{(query<Q,OO>||...)};
+constexpr const bool hapi::template query<Q,oneItem::template ItemDef<OO...>>{(hapi::template query<Q,OO>||...)};
 
