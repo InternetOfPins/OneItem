@@ -96,8 +96,8 @@ struct EnDis {
   struct Part:Chain<Default<bool,ens>,Hidden<Bool>>::template Part<I> {
     using Base=typename Chain<Default<bool,ens>,Hidden<Bool>>::template Part<I>;
     using Base::Base;
-    // void enable(bool e=true) {Base::set(e);}
-    // bool enabled() {return Base::get();}
+    void enable(bool e=true) {Base::set(e);}
+    bool enabled() {return Base::get();}
   };
 };
 
