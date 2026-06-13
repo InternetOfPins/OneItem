@@ -38,7 +38,7 @@ namespace oneItem {
   struct ItemDef:APIOf<ItemAPI<>,OO...>{
     using Base=APIOf<ItemAPI<>,OO...>;
     using Base::Base;
-    using Types=hapi::Chain<OO...>;
+    using Types=hapi::Chain<ItemAPI<>,OO...>;  // includes API head so find<Q> splits correctly
     static constexpr const size_t size{sizeof...(OO)};
   };
 
@@ -84,8 +84,8 @@ namespace oneItem {
       using Base=typename hapi::Chain<II...>::template Part<I>;
       using Type=typename I::Type;
       using Base::Base;
-      static Type get() noexcept {return I::get();}
-      static void set(typename I::Type v) noexcept {I::set(v);}
+      Type get() const noexcept {return I::get();}
+      void set(typename I::Type v) noexcept {I::set(v);}
     };
   };
 
