@@ -1,6 +1,6 @@
 {
   "name": "OneItem",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "HAPI item API — behavior and presentation components",
   "keywords": "hapi, item, behavior, components, embedded",
   "repository":
@@ -20,8 +20,8 @@
   "license": "MIT",
   "homepage": "https://github.com/InternetOfPins/OneItem",
   "dependencies": {
-    "HAPI":"https://github.com/InternetOfPins/HAPI.git@^0.3.26",
-    "OneData":"https://github.com/InternetOfPins/OneData.git@^0.1.12"
+    "HAPI":">=0.4.1",
+    "OneData":">=0.1.13"
   },
   "frameworks": "*",
   "platforms": "*"
