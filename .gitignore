@@ -1,0 +1,4 @@
+.pio
+.*
+!.gitignore
+!.gitattributes
