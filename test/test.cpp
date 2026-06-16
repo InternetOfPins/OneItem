@@ -78,16 +78,16 @@ struct Sink {
 void test_hidden() {
   // Hidden wraps components so they are excluded from print() but still store data
   // EnDis uses Hidden internally — we verify the data is accessible
-  ItemDef<Int, Hidden<StaticInt<7>>> item;
+  ItemDef<Int, Hidden<StaticData<7>>> item;
   item.set(3);
-  assert(item.get() == 3);      // get() reaches Int, not the hidden StaticInt
-  cout << "Hidden<StaticInt<7>> data accessible via Int::get: ok" << endl;
+  assert(item.get() == 3);      // get() reaches Int, not the hidden StaticData
+  cout << "Hidden<StaticData<7>> data accessible via Int::get: ok" << endl;
 }
 
 void test_static_item() {
-  ItemDef<StaticInt<42>> item;
+  ItemDef<StaticData<42>> item;
   assert(item.get() == 42);
-  cout << "ItemDef<StaticInt<42>>: ok" << endl;
+  cout << "ItemDef<StaticData<42>>: ok" << endl;
 }
 
 void doTests() {
