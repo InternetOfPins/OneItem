@@ -47,7 +47,7 @@ namespace oneItem {
   Out& operator<<(Out& out,const ItemDef<OO...>& o) {o.print(out);return out;}
 
   //---------------------------------------------------------------------------------------------
-  template<int id> struct Id {template<typename O> using Part=O;};
+  template<auto id> struct Id {template<typename O> using Part=O;};
   template<auto V> inline constexpr hapi::SameAs<Id<V>> byId{};
 
   using ActionFunc=bool(&)();
