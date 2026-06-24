@@ -52,8 +52,7 @@ namespace oneItem {
 
   using ActionFunc=bool(&)();
 
-  //associate an action function
-  // api: act() will call it
+  /// @brief calls a function on item activation; fn() returns true if handled
   template<ActionFunc action>
   struct Action {
     template<typename I>
@@ -64,7 +63,7 @@ namespace oneItem {
     };
   };
 
-  //hide a group of components by excluding them from the print api chain
+  /// @brief excludes inner components from print output; data is still accessible via get/set
   template<typename... II>
   struct Hidden {
     template<typename I>
@@ -76,8 +75,7 @@ namespace oneItem {
     };
   };
 
-  //mark a group of components as Decor
-  //by excluding them of the get/set api calls
+  /// @brief decorative (non-editable) wrapper: participates in print but not get/set
   template<typename... II>
   struct Decor {
     template<typename I>
@@ -90,6 +88,7 @@ namespace oneItem {
     };
   };
 
+  /// @brief enables or disables an item at compile time; runtime toggle via enable(bool)
   template<bool ens>
   struct EnDis {
     using Type = bool;
@@ -108,6 +107,7 @@ namespace oneItem {
   template<typename Title,typename Value>
   using Alias=hapi::Chain<Decor<Title>,Hidden<Value>>;
 
+  /// @brief wraps inner components between a prefix (P) and suffix (S) in the HAPI chain
   template<typename P,typename S>
   struct Envelope {
     template<typename... OO>
