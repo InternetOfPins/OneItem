@@ -72,6 +72,8 @@ namespace oneItem {
       using Base::Base;
       template<typename Out>
       void print(Out& out) const noexcept {I::print(out);}
+      template<typename Out,typename Ctx>
+      void printItem(Out& out,Ctx& ctx) noexcept {I::printItem(out,ctx);}
     };
   };
 
