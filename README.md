@@ -1,5 +1,7 @@
 # OneItem
 
+**HAPI Compatibility:** Works with new Check/Apply/ApplyPack API (2026-Q2)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 HAPI-based item composition library. Defines the `ItemDef` building block and a set of composable components for constructing interactive data items with zero runtime overhead.
