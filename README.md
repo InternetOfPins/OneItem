@@ -10,14 +10,6 @@ Part of the [InternetOfPins](https://github.com/InternetOfPins) ecosystem.
 
 ---
 
-## Dependencies
-
-- [hapi](https://github.com/InternetOfPins/hapi) — open chain derivation core
-- [oneData](https://github.com/InternetOfPins/oneData) — data component primitives
-- [oneOutput](https://github.com/InternetOfPins/oneOutput) — output channel abstraction
-
----
-
 ## Concepts
 
 ### Item
