@@ -1,5 +1,7 @@
 # OneItem
 
+<img src="logo.png" alt="OneItem logo" width="64" height="64">
+
 **HAPI Compatibility:** Works with new Check/Apply/ApplyPack API (2026-Q2)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
