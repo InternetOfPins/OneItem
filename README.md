@@ -1,6 +1,4 @@
-# OneItem
-
-<img src="logo.png" alt="OneItem logo" width="64" height="64">
+# <img src="logo.png" alt="OneItem logo" width="32" height="32"> OneItem
 
 **HAPI Compatibility:** Works with new Check/Apply/ApplyPack API (2026-Q2)
 
